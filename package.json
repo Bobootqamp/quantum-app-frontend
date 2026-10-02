@@ -1,0 +1,43 @@
+{
+  "name": "quantum-app-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm lint && pnpm typecheck && pnpm test"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@11.10.0",
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.13",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "@vitest/coverage-v8": "^5.0.0",
+    "@vitest/ui": "^5.0.0",
+    "jsdom": "^30.0.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.0"
+  },
+  "dependencies": {
+    "@qamposer/react": "^0.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

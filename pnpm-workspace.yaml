@@ -1,0 +1,11 @@
+# Supply-chain hardening (pnpm 11 reads these from here, not from .npmrc)
+# minimumReleaseAge is in minutes: 14 days = 20160
+minimumReleaseAge: 20160
+# Exempt only packages maintained by this project's authors, so fixes can be adopted immediately.
+minimumReleaseAgeExclude:
+  - "@qamposer/react"
+blockExoticSubdeps: true
+strictDepBuilds: true
+trustPolicy: no-downgrade
+# Packages whose install scripts have been reviewed. Add entries only after review.
+allowBuilds: {}
