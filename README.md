@@ -22,7 +22,7 @@ pnpm dev          # http://localhost:5173
 
 ## Qiskit backend につなぐ（任意）
 
-[qamposer-backend](https://github.com/QAMP-62/qamposer-backend) を起動したら、次のようにします。
+[quantum-app-backend](https://github.com/QAMP-62/quantum-app-backend) を起動したら、次のようにします。
 
 ```sh
 cp .env.example .env.local   # VITE_QISKIT_BACKEND_URL=http://localhost:8080

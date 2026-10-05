@@ -14,7 +14,7 @@ export interface SimulationAdapters {
  * Pick simulation adapters from the environment.
  *
  * - No backend URL: everything runs in the browser (localAdapter).
- * - With VITE_QISKIT_BACKEND_URL: "Run" goes to the Qiskit backend (qamposer-backend),
+ * - With VITE_QISKIT_BACKEND_URL: "Run" goes to the Qiskit backend (quantum-app-backend),
  *   while edits are still simulated instantly in the browser.
  */
 export function createSimulationAdapters(backendUrl: string | undefined): SimulationAdapters {

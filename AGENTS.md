@@ -111,10 +111,10 @@ tests/                   Vitest（*.test.ts / *.test.tsx、jsdom 環境）
 
 ## Qiskit backend への接続（任意）
 
-既定では、すべてのシミュレーションがブラウザ内（`localAdapter`）で動きます。[qamposer-backend](https://github.com/QAMP-62/qamposer-backend) を起動して `.env.local` に URL を書くと、「Set up and run」と `simulate()` が Qiskit で実行されます（編集のたびの自動シミュレーションは引き続きブラウザ内）。
+既定では、すべてのシミュレーションがブラウザ内（`localAdapter`）で動きます。[quantum-app-backend](https://github.com/QAMP-62/quantum-app-backend) を起動して `.env.local` に URL を書くと、「Set up and run」と `simulate()` が Qiskit で実行されます（編集のたびの自動シミュレーションは引き続きブラウザ内）。
 
 ```sh
-# qamposer-backend 側
+# quantum-app-backend 側
 uv sync
 uv run uvicorn backend.main:app --host 0.0.0.0 --port 8080 --reload
 
